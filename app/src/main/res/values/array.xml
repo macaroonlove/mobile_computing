@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="l_period">
+        <item>2주일</item>
+        <item>1개월</item>
+        <item>3개월</item>
+        <item>6개월</item>
+        <item>1년</item>
+    </string-array>
+
+</resources>

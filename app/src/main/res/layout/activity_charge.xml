@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".charge"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/charge_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 충전 금액"
+            android:textSize="25sp"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center|left"/>
+        <TextView
+            android:id="@+id/currentMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"
+            android:text="2,0000원"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/selector_radio_group">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="1dp">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:checked="true"
+                android:text="5,000원"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:text="10,000원"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:text="30,000원"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:text="50,000원"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:text="100,000원"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/paybutton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cornerRadius="60dp"
+        android:text="결제하기"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+</LinearLayout>
